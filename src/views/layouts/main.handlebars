@@ -1,0 +1,1770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/animation.css">
+    <link rel="stylesheet" href="/css/grid.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.1/css/all.css">
+<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+</head>
+<body> 
+    <section class="header">
+    <div>
+            {{> header}}
+    </div>
+    </section>
+
+    <section class="main">
+     
+    <div class="main_content" id="home">
+        <div class="snowAnimation" >
+        </div>
+        <div class="overlay">
+
+        <div class="grid wide">
+            <div class="row">
+                <div class="col l-5 m-12 c-12">
+                    
+                        <div class="block">
+                            <div class="block__detail">
+                                <div class="degree" >
+                                    <div class="degree__icon"><img id="mainIcon" class="weather-icon" src="/img/10.png" alt="forecasticon" /></div>
+                                    <div class="degree__text"><h1 id="temp" class= "temp" style="font-size: 85px;">-10<sup style="vertical-align:text-top;font-size:35px; margin-right:10px;">o</sup></h1>
+                                    
+                                    </div>
+
+                                </div>
+
+                                <div class="forecast hideOnPClow hideOnMobile">
+                                    <div class="forecast__condition"><p>Rain</p></div>
+                                    <div class="forecast__icon">
+                                        <img src="https://oxentictemplates.in/templatemonster/weather/images/2060846.png" />
+                                        <h2 id="rain" style="margin:0;">70%</h2>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="block__location">
+                                <div class="block__location__heading">
+                                    <h1 class="city currentLocation">New York</h1>
+                                </div>
+                                <div class="block__location__time">
+                                    <div class="time">
+                                        <p id="currentTime" >09:15AM</p>
+                                    </div>
+                                    <div class="date">
+                                        <p class="getDate" >Monday, October 16</p>
+                                    </div>
+                                 
+                                </div>
+                            </div>
+                        </div>
+                    
+                </div>
+
+                <div class="col l-7 m-12 c-12">
+                    <div class="card__container swiper">
+                        <div class="card__content">
+                            <div class="swiper-wrapper" id="hourlyCards">
+
+                            <article class="card__article swiper-slide">
+                                <div class="card card__text_color">
+                                    <div class="card__time"><h1 style="">Now</h1></div>
+                                
+                                    <div class="card__data ">
+                                    <div class="card__image">
+                                    <img src="/img/10.png" alt="image" class="card__img" id="hourIcon">
+                                    </div>
+
+                                <div class="card__degree">
+                                    <h1 style="font-size: 50px;">-10<sup style="vertical-align: super;font-size:30px; ">o</sup></h1>
+
+                                </div>
+
+                                <div class="card__text hideOnTablet"><p >Feels like -8 <sup style="vertical-align: super;font-size:6px; ">0</sup></p></div>
+
+                                <div class="card__desc">
+                                    <p id="hour" style="margin-bottom:3px;">Light snow</p>
+                                    
+                                </div>
+
+                                    </div>
+                                </div> 
+                            </article>
+
+                            <article class="card__article swiper-slide">
+                                <div class="card card__text_color">
+                                    <div class="card__time"><h1 style="">12:00PM</h1></div>
+                                
+                                
+                                <div class="card__data">
+                                <div class="card__image">
+                                    <img src="img/14.png" alt="image" class="card__img" id="hourIcon">
+                                </div>
+                                <div class="card__degree">
+                                    <h1 style="font-size: 50px;">-7<sup style="vertical-align: super;font-size:30px; ">o</sup></h1>
+                                </div>
+
+                                <div class="card__text hideOnTablet"><p >Feels like -5 <sup style="vertical-align: super;font-size:6px; ">o</sup></p></div>
+
+                                <div class="card__desc">
+                                    <p id="hour6" style="margin-bottom:3px;">Sunny Snow</p>
+                                    
+                                </div>
+                                </div>
+                                </div> 
+                            </article>
+
+                            <article class="card__article swiper-slide">
+                                <div class="card card__text_color">
+                                    <div class="card__time"><h1 style="">15:00PM</h1></div>
+                                
+                                
+                                <div class="card__data">
+                                <div class="card__image">
+                                    <img src="img/14.png" alt="image" class="card__img" id="hourIcon">
+                                </div>
+                                <div class="card__degree">
+                                    <h1 style="font-size: 50px;">-9<sup style="vertical-align: super;font-size:30px; ">o</sup></h1>
+                                </div>
+
+                                <div class="card__text hideOnTablet"><p >Feels like -10 <sup style="vertical-align: super;font-size:6px; ">o</sup></p></div>
+
+                                <div class="card__desc">
+                                    <p style="margin-bottom:3px;">Sunny Snow</p>
+                                    
+                                </div>
+                                </div>
+                                </div> 
+                            </article>
+
+                            <article class="card__article swiper-slide">
+                                <div class="card card__text_color">
+                                    <div class="card__time"><h1 style="">18:00PM</h1></div>
+                                
+                                
+                                <div class="card__data">
+                                <div class="card__image">
+                                    <img src="img/3.1.png" alt="image" class="card__img" id="hourIcon">
+                                </div>
+                                <div class="card__degree">
+                                    <h1 style="font-size: 50px;">-4<sup style="vertical-align: super;font-size:30px; ">o</sup></h1>
+                                </div>
+
+                                <div class="card__text hideOnTablet"><p >Feels like -8 <sup style="vertical-align: super;font-size:6px; ">o</sup></p></div>
+
+                                <div class="card__desc">
+                                    <p style="margin-bottom:3px;">Rainy</p>
+                                </div>
+                                </div>
+                                </div> 
+                            </article>
+
+                            <article class="card__article swiper-slide">
+                                <div class="card card__text_color">
+                                    <div class="card__time"><h1 style="">21:00PM</h1></div>
+                                
+                                
+                                <div class="card__data">
+                                <div class="card__image">
+                                    <img src="img/11.png" alt="image" class="card__img" id="hourIcon">
+                                </div>
+                                <div class="card__degree">
+                                    <h1 style="font-size: 50px;">-15<sup style="vertical-align: super;font-size:30px; ">o</sup></h1>
+                                </div>
+                                <div class="card__text hideOnTablet"><p >Feels like -13 <sup style="vertical-align: super;font-size:6px; ">o</sup></p></div>
+
+                                <div class="card__desc">
+                                    <p style="margin-bottom:3px;">Night Snow</p>
+                                    
+                                </div>
+                                </div>
+                                </div> 
+                            </article>
+
+                            <article class="card__article swiper-slide">
+                                <div class="card card__text_color">
+                                    <div class="card__time"><h1>23:00PM</h1></div>
+                                
+                                
+                                <div class="card__data">
+                                <div class="card__image">
+                                    <img src="img/11.png" alt="image" class="card__img" id="hourIcon">
+                                </div>
+                                <div class="card__degree">
+                                    <h1 style="font-size: 50px;">-19<sup style="vertical-align: super;font-size:30px; ">o</sup></h1>
+                                </div>
+                                <div class="card__text hideOnTablet"><p >Feels like -20 <sup style="vertical-align: super;font-size:6px; ">o</sup></p></div>
+
+                                <div class="card__desc">
+                                    <p style="margin-bottom:3px;">Heavy Snow</p>
+                                    
+                                </div>
+                                </div>
+                                </div> 
+                            </article>
+
+                            
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </div>  
+
+    <div class="today-tomorow">
+
+    <div class=" grid wide today-tomorrow__header" style="border-bottom:solid 2px #000;">
+            
+                <div class="row" >  
+                    <div class="today-tomorrow__heading">
+                        <h2 class="today__heading">Today</h2>
+                         <div class="separator"></div>
+                        <h2 class="tomorrow__heading">Tomorrow</h2>
+                    </div>           
+                </div>
+            
+    </div>
+
+    <div class="grid wide today">
+        <div class="row">
+            <div class="today__heading-2">
+                <h1>Today Weather Details</h1>
+            </div>
+                    <div class="col l-4 m-6 c-12">   
+                        <div class="highlight">
+                            <div class="highlight__location">
+                                <div class="city-detail">
+                                    <img src="/img/location_icon.png">
+                                    <h3 style="margin:0;" class="currentLocation">New York</h3>
+                                </div >
+
+                                <div class="date2">
+                                    <h3 class="getDate">Monday, October 16</h3>
+                                </div>
+                                
+                            </div>
+
+                            <div class="highlight__icon">
+                                <div class="icon">
+                                    <img id="todayIcon" src="/img/10.png">
+                                </div>
+                                
+                            </div>
+                            <div class="highlight__desc"><h2 id="condition">Snow</h2></div>
+                            <div class="highlight__degree">
+                                <h1 id="tempMin">-20<sup style="vertical-align:text-top;font-size:24px; ">o</sup></h1>
+                                <h1 id="tempMax"> / -4<sup style="vertical-align:text-top;font-size:24px; ">o</sup></h1>
+                            </div>
+                           
+                        </div>             
+                    </div>
+
+                    <div class="col l-4 m-6 c-12">
+                        <div class="highlight2">
+                            <div class="highlight2_1">
+                                <div class="highlight__content ">
+                                    <img src="/img/wind.png"> 
+                                    <div class="highlight__content__desc">
+                                    <h3 style="margin-right:10px;">Wind </h3>
+                                    <h3 id ="wind" style="margin-right:10px;font-size:35px">20</h3>
+                                    <h3 style="margin-top:15px;">km/h</h3>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="highlight2_2">
+                                <div class="highlight__content">
+                                    <img src="/img/humidity.png"> 
+                                    <div class="highlight__content__desc">
+                                    <h3 style="margin-right:10px;">Humidity </h3>
+                                    <h3 id="humidity" style="margin-right:10px;font-size:35px">20</h3>
+                                    <h3 style="margin-top:15px; font-size:20px;">%</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col l-4 m-12 c-12">
+                        
+                        <div class="highlight2 custom">
+                            
+                            <div class="highlight2_1">
+                                <div class="highlight__content">
+                                    <img src="/img/visibility.png"> 
+                                    <div class="highlight__content__desc">
+                                    <h3 style="margin-right:10px;">Visibility </h3>
+                                    <h3 id="visibility" style="margin-right:10px;font-size:35px">7.5</h3>
+                                    <h3 style="margin-top:15px;">km</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="highlight2_2">
+                                <div class="highlight__content">
+                                    <img src="/img/uv-index.png"> 
+                                    <div class="highlight__content__desc">
+                                    <h3 style="margin-right:10px;">UV index </h3>
+                                    <h3 id="uvIndex" style="margin-right:10px;font-size:35px">105</h3>
+                                    <h3 style="margin-top:15px;">index</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+        </div>
+    </div>
+
+    <div class="grid wide tomorrow" style="display:none;">
+        <div class="row">
+
+            <div class="tomorrow__heading-2">
+                <h1>Tomorrow Weather Details</h1>
+            </div>
+                    <div class="col l-4 m-6 c-12">   
+                        <div class="highlight">
+                            <div class="highlight__location">
+                                <div class="city-detail">
+                                    <img src="/img/location_icon.png">
+                                    <h3 class="currentLocation" style="margin:0;">New York</h3>
+                                </div >
+
+                                <div class="date">
+                                    <h3 id="tomorrow">Tuesday, August 17</h3>
+                                </div>
+                                
+                            </div>
+
+                            <div class="highlight__icon">
+                                <div class="icon">
+                                    <img id="tomorrowIcon" src="/img/3.1.png">
+                                </div>
+                                
+                            </div>
+                            <div class="highlight__desc"><h2 id="condition_tomorrow">Rainy</h2></div>
+                            <div class="highlight__degree">
+                                <h1 id="tempMin_tomorrow">8<sup style="vertical-align:text-top;font-size:24px; ">o</sup></h1>
+                                <h1 id="tempMax_tomorrow"> / 16<sup style="vertical-align:text-top;font-size:24px; ">o</sup></h1>
+                            </div>
+                            
+                        </div>             
+                    </div>
+
+                    <div class="col l-4 m-6 c-12">
+                        <div class="highlight2">
+                            <div class="highlight2_1">
+                                <div class="highlight__content ">
+                                    <img src="/img/wind.png"> 
+                                    <div class="highlight__content__desc">
+                                    <h3 style="margin-right:10px;">Wind </h3>
+                                    <h3 id = "wind_tomorrow" style="margin-right:10px;font-size:35px">25</h3>
+                                    <h3 style="margin-top:15px;">km/h</h3>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="highlight2_2">
+                                <div class="highlight__content">
+                                    <img src="/img/humidity.png"> 
+                                    <div class="highlight__content__desc">
+                                    <h3 style="margin-right:10px;">Humidity </h3>
+                                    <h3 id="humidity_tomorrow" style="margin-right:10px;font-size:35px">30</h3>
+                                    <h3 style="margin-top:15px; font-size:20px;">%</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col l-4 m-12 c-12">
+                        <div class="highlight2 custom">
+                            <div class="highlight2_1">
+                                <div class="highlight__content">
+                                    <img src="/img/visibility.png"> 
+                                    <div class="highlight__content__desc">
+                                    <h3 style="margin-right:10px;">Visibility </h3>
+                                    <h3 id="visibility_tomorrow" style="margin-right:10px;font-size:35px">4.5</h3>
+                                    <h3 style="margin-top:15px;">km</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="highlight2_2">
+                                <div class="highlight__content">
+                                    <img src="/img/uv-index.png"> 
+                                    <div class="highlight__content__desc">
+                                    <h3 style="margin-right:10px;">UV index </h3>
+                                    <h3 id="uvIndex_tomorrow" style="margin-right:10px;font-size:35px">95</h3>
+                                    <h3 style="margin-top:15px;">index</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>   
+    </div>
+
+    </div>
+
+
+    <div class="weekly">
+        <div class="weekly-overlay">
+
+        <div class="weekly__header">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="weekly__heading">
+                        <h2 style="color:#fff">Weekly Weather Forecast</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="weekly__card">
+            <div class="grid wide">
+                <div class="row">
+                    <div class=" col l-12 m-12 c-12">
+                        <div class="weekly__card__container swiper">
+                            <div class="weekly__card__content"  >
+                            <div class="swiper-wrapper" id="weatherCards">
+                                
+                                <article class="weekly__card__article swiper-slide">
+                                    <div class="card__top">
+                                        <div class="article__header">
+                                            <div class="article__header__item"><img src="img/menu.png"></div>
+                                            <div class="article__header__item" ><h1 style="font-size:22px; color:#fff;">MONDAY</h1></div>
+                                            <div class="article__header__item"></div>
+                                        </div>
+                                        <div class="article__icon">
+                                            <div class="article__icon__img">
+                                                <img src="/img/10.png" alt="snow">
+                                            </div>
+                                        </div>
+                                        <div class="article__icon__desc">
+                                            <h3 style="font-size: 55px;">-10<sup style="vertical-align:text-top;font-size:25px; ">o</sup></h3>
+                                        </div>
+                                        
+                                    </div>
+
+                                    <div class="card__middle" onmouseover="showOverlay(this)" onmouseout="hideOverlay(this)">
+                                        <div class="layout">
+                                            <div class="grid wide">
+                                                <div class="row">
+                                                    <div class="col l-2 m-4 c-2" style="padding:6px;">
+                                                        <div class="card__middle__content">
+                                                            <div class="card__middle__desc">
+                                                                <h4>4AM</h4>
+                                                            </div>
+                                                            <div class="card__middle__logo">
+                                                                <img src="/img/10.png">
+                                                            </div>
+                                                            <div class="card__middle__desc">
+                                                                <h4 style="font-size: 16px;">-8<sup style="vertical-align:text-top;font-size:10px; ">o</sup></h4>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div class="col l-2 m-4 c-2" style="padding:6px;">
+                                                        <div class="card__middle__content">
+                                                            <div class="card__middle__desc">
+                                                                <h4>8AM</h4>
+                                                            </div>
+                                                            <div class="card__middle__logo">
+                                                                <img src="/img/10.png">
+                                                            </div>
+                                                            <div class="card__middle__desc">
+                                                                <h4 style="font-size: 16px;">-12<sup style="vertical-align:text-top;font-size:10px; ">o</sup></h4>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+
+                                                    <div class="col l-2 m-4 c-2" style="padding:6px;">
+                                                        <div class="card__middle__content">
+                                                            <div class="card__middle__desc">
+                                                                <h4>12PM</h4>
+                                                            </div>
+                                                            <div class="card__middle__logo">
+                                                                <img src="/img/14.png">
+                                                            </div>
+                                                            <div class="card__middle__desc">
+                                                                <h4 style="font-size: 16px;">-7<sup style="vertical-align:text-top;font-size:10px; ">o</sup></h4>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+
+                                                    <div class="col l-2 m-4 c-2" style="padding:6px;">
+                                                        <div class="card__middle__content">
+                                                            <div class="card__middle__desc">
+                                                                <h4>16PM</h4>
+                                                            </div>
+                                                            <div class="card__middle__logo">
+                                                                <img src="/img/8.png">
+                                                            </div>
+                                                            <div class="card__middle__desc">
+                                                                <h4 style="font-size: 16px;">-12<sup style="vertical-align:text-top;font-size:10px; ">o</sup></h4>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div class="col l-2 m-4 c-2" style="padding:6px;">
+                                                        <div class="card__middle__content">
+                                                            <div class="card__middle__desc">
+                                                                <h4>20PM</h4>
+                                                            </div>
+                                                            <div class="card__middle__logo">
+                                                                <img src="/img/11.png">
+                                                            </div>
+                                                            <div class="card__middle__desc">
+                                                                <h4 style="font-size: 16px;">-14<sup style="vertical-align:text-top;font-size:10px; ">o</sup></h4>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div class="col l-2 m-4 c-2" style="padding:6px;">
+                                                        <div class="card__middle__content">
+                                                            <div class="card__middle__desc">
+                                                                <h4>24PM</h4>
+                                                            </div>
+                                                            <div class="card__middle__logo">
+                                                                <img src="/img/11.png">
+                                                            </div>
+                                                            <div class="card__middle__desc">
+                                                                <h4 style="font-size: 16px;">-20<sup style="vertical-align:text-top;font-size:10px; ">o</sup></h4>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="overlay_details" id="overlay_details">
+                                           <div class="card__middle-2">
+                                                <div class="layout-2">
+                                                    <div class="layout__item-1">
+                                                <div class="layout-2__icon"> <img src="/img/wind.png"></div>
+                                                <div class="layout-2__desc"><h1>Wind</h1></div>
+                                                <div class="layout-2__index"><h1>s 1m/s</h1></div>
+                                                    </div>
+                                                    <div class="layout__item-2">
+                                                <div class="layout-2__icon">
+                                                    <img src="/img/humidity.png">
+                                                </div>
+                                                <div class="layout-2__desc">
+                                                    <h1>Humidity</h1>
+                                                </div>
+                                                <div class="layout-2__index">
+                                                    <h1>20%</h1>
+                                                </div>     
+                                                    </div>
+                                                    <div class="layout__item-3">
+                                                <div class="layout-2__icon"><img src="/img/visibility.png"></div>
+                                                <div class="layout-2__desc"><h1>Visibility</h1></div>
+                                                <div class="layout-2__index"><h1>5.5km</h1></div>   
+                                                    </div>
+                                                    <div class="layout__item-4">
+                                                <div class="layout-2__icon"><img src="/img/air.png"></div>
+                                                <div class="layout-2__desc"><h1>Air Qualiity</h1></div>
+                                                <div class="layout-2__index"><h1>Moderate</h1></div>      
+                                                    </div> 
+                                                 </div> 
+
+                                            </div>
+                                        </div>
+                                    </div>  
+      
+                                </article>
+
+                                <article class="weekly__card__article swiper-slide">
+                                    <div class="card__top">
+                                        <div class="article__header">
+                                            <div class="article__header__item"><img src="img/menu.png"></div>
+                                            <div class="article__header__item" ><h1 style="font-size:22px; color:#fff;">TUESDAY</h1></div>
+                                            <div class="article__header__item"></div>
+                                        </div>
+                                        <div class="article__icon">
+                                            <div class="article__icon__img">
+                                                <img src="/img/3.1.png" alt="rainy">
+                                            </div>
+                                        </div>
+                                        <div class="article__icon__desc">
+                                            <h3 style="font-size: 55px;">13<sup style="vertical-align:text-top;font-size:25px; ">o</sup></h3>
+                                        </div>
+                                        
+                                    </div>
+
+                                    <div class="card__middle" onmouseover="showOverlay(this)" onmouseout="hideOverlay(this)">
+                                        <div class="layout">
+                                            <div class="grid wide">
+                                                <div class="row">
+                                                    <div class="col l-2 m-4 c-2" style="padding:6px;">
+                                                        <div class="card__middle__content">
+                                                            <div class="card__middle__desc">
+                                                                <h4>4AM</h4>
+                                                            </div>
+                                                            <div class="card__middle__logo">
+                                                                <img src="/img/3.1.png">
+                                                            </div>
+                                                            <div class="card__middle__desc">
+                                                                <h4 style="font-size: 16px;">8<sup style="vertical-align:text-top;font-size:10px; ">o</sup></h4>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div class="col l-2 m-4 c-2" style="padding:6px;">
+                                                        <div class="card__middle__content">
+                                                            <div class="card__middle__desc">
+                                                                <h4>8AM</h4>
+                                                            </div>
+                                                            <div class="card__middle__logo">
+                                                                <img src="/img/3.1.png">
+                                                            </div>
+                                                            <div class="card__middle__desc">
+                                                                <h4 style="font-size: 16px;">10<sup style="vertical-align:text-top;font-size:10px; ">o</sup></h4>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+
+                                                    <div class="col l-2 m-4 c-2" style="padding:6px;">
+                                                        <div class="card__middle__content">
+                                                            <div class="card__middle__desc">
+                                                                <h4>12PM</h4>
+                                                            </div>
+                                                            <div class="card__middle__logo">
+                                                                <img src="/img/3.1.png">
+                                                            </div>
+                                                            <div class="card__middle__desc">
+                                                                <h4 style="font-size: 16px;">16<sup style="vertical-align:text-top;font-size:10px; ">o</sup></h4>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+
+                                                    <div class="col l-2 m-4 c-2" style="padding:6px;">
+                                                        <div class="card__middle__content">
+                                                            <div class="card__middle__desc">
+                                                                <h4>16PM</h4>
+                                                            </div>
+                                                            <div class="card__middle__logo">
+                                                                <img src="/img/8.png">
+                                                            </div>
+                                                            <div class="card__middle__desc">
+                                                                <h4 style="font-size: 16px;">12<sup style="vertical-align:text-top;font-size:10px; ">o</sup></h4>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div class="col l-2 m-4 c-2" style="padding:6px;">
+                                                        <div class="card__middle__content">
+                                                            <div class="card__middle__desc">
+                                                                <h4>20PM</h4>
+                                                            </div>
+                                                            <div class="card__middle__logo">
+                                                                <img src="/img/2.1.png">
+                                                            </div>
+                                                            <div class="card__middle__desc">
+                                                                <h4 style="font-size: 16px;">11<sup style="vertical-align:text-top;font-size:10px; ">o</sup></h4>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div class="col l-2 m-4 c-2" style="padding:6px;">
+                                                        <div class="card__middle__content">
+                                                            <div class="card__middle__desc">
+                                                                <h4>24PM</h4>
+                                                            </div>
+                                                            <div class="card__middle__logo">
+                                                                <img src="/img/9.png">
+                                                            </div>
+                                                            <div class="card__middle__desc">
+                                                                <h4 style="font-size: 16px;">10<sup style="vertical-align:text-top;font-size:10px; ">o</sup></h4>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="overlay_details" id="overlay_details">
+                                           <div class="card__middle-2">
+                                                <div class="layout-2">
+                                                    <div class="layout__item-1">
+                                                <div class="layout-2__icon"> <img src="/img/wind.png"></div>
+                                                <div class="layout-2__desc"><h1>Wind</h1></div>
+                                                <div class="layout-2__index"><h1>s 1m/s</h1></div>
+                                                    </div>
+                                                    <div class="layout__item-2">
+                                                <div class="layout-2__icon">
+                                                    <img src="/img/humidity.png">
+                                                </div>
+                                                <div class="layout-2__desc">
+                                                    <h1>Humidity</h1>
+                                                </div>
+                                                <div class="layout-2__index">
+                                                    <h1>20%</h1>
+                                                </div>     
+                                                    </div>
+                                                    <div class="layout__item-3">
+                                                <div class="layout-2__icon"><img src="/img/visibility.png"></div>
+                                                <div class="layout-2__desc"><h1>Visibility</h1></div>
+                                                <div class="layout-2__index"><h1>5.5km</h1></div>   
+                                                    </div>
+                                                    <div class="layout__item-4">
+                                                <div class="layout-2__icon"><img src="/img/air.png"></div>
+                                                <div class="layout-2__desc"><h1>Air Qualiity</h1></div>
+                                                <div class="layout-2__index"><h1>Moderate</h1></div>      
+                                                    </div> 
+                                                 </div> 
+                                            </div>
+                                        </div>
+                                    </div>    
+                                </article>
+
+                                <article class="weekly__card__article swiper-slide">
+                                    <div class="card__top">
+                                        <div class="article__header">
+                                            <div class="article__header__item"><img src="img/menu.png"></div>
+                                            <div class="article__header__item" ><h1 style="font-size:22px; color:#fff;">WEDNESDAY</h1></div>
+                                            <div class="article__header__item"></div>
+                                        </div>
+                                        <div class="article__icon">
+                                            <div class="article__icon__img">
+                                                <img src="/img/8.png" alt="cloudy">
+                                            </div>
+                                        </div>
+                                        <div class="article__icon__desc">
+                                            <h3 style="font-size: 55px;">22<sup style="vertical-align:text-top;font-size:25px; ">o</sup></h3>
+                                        </div>
+                                        
+                                    </div>
+
+                                    <div class="card__middle" onmouseover="showOverlay(this)" onmouseout="hideOverlay(this)">
+                                        <div class="layout">
+                                            <div class="grid wide">
+                                                <div class="row">
+                                                    <div class="col l-2 m-4 c-2" style="padding:6px;">
+                                                        <div class="card__middle__content">
+                                                            <div class="card__middle__desc">
+                                                                <h4>4AM</h4>
+                                                            </div>
+                                                            <div class="card__middle__logo">
+                                                                <img src="/img/3.1.png">
+                                                            </div>
+                                                            <div class="card__middle__desc">
+                                                                <h4 style="font-size: 16px;">18<sup style="vertical-align:text-top;font-size:10px; ">o</sup></h4>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div class="col l-2 m-4 c-2" style="padding:6px;">
+                                                        <div class="card__middle__content">
+                                                            <div class="card__middle__desc">
+                                                                <h4>8AM</h4>
+                                                            </div>
+                                                            <div class="card__middle__logo">
+                                                                <img src="/img/6.png">
+                                                            </div>
+                                                            <div class="card__middle__desc">
+                                                                <h4 style="font-size: 16px;">22<sup style="vertical-align:text-top;font-size:10px; ">o</sup></h4>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+
+                                                    <div class="col l-2 m-4 c-2" style="padding:6px;">
+                                                        <div class="card__middle__content">
+                                                            <div class="card__middle__desc">
+                                                                <h4>12PM</h4>
+                                                            </div>
+                                                            <div class="card__middle__logo">
+                                                                <img src="/img/7.png">
+                                                            </div>
+                                                            <div class="card__middle__desc">
+                                                                <h4 style="font-size: 16px;">25<sup style="vertical-align:text-top;font-size:10px; ">o</sup></h4>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+
+                                                    <div class="col l-2 m-4 c-2" style="padding:6px;">
+                                                        <div class="card__middle__content">
+                                                            <div class="card__middle__desc">
+                                                                <h4>16PM</h4>
+                                                            </div>
+                                                            <div class="card__middle__logo">
+                                                                <img src="/img/8.png">
+                                                            </div>
+                                                            <div class="card__middle__desc">
+                                                                <h4 style="font-size: 16px;">24<sup style="vertical-align:text-top;font-size:10px; ">o</sup></h4>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div class="col l-2 m-4 c-2" style="padding:6px;">
+                                                        <div class="card__middle__content">
+                                                            <div class="card__middle__desc">
+                                                                <h4>20PM</h4>
+                                                            </div>
+                                                            <div class="card__middle__logo">
+                                                                <img src="/img/2.1.png">
+                                                            </div>
+                                                            <div class="card__middle__desc">
+                                                                <h4 style="font-size: 16px;">21<sup style="vertical-align:text-top;font-size:10px; ">o</sup></h4>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div class="col l-2 m-4 c-2" style="padding:6px;">
+                                                        <div class="card__middle__content">
+                                                            <div class="card__middle__desc">
+                                                                <h4>24PM</h4>
+                                                            </div>
+                                                            <div class="card__middle__logo">
+                                                                <img src="/img/9.png">
+                                                            </div>
+                                                            <div class="card__middle__desc">
+                                                                <h4 style="font-size: 16px;">17<sup style="vertical-align:text-top;font-size:10px; ">o</sup></h4>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="overlay_details" id="overlay_details">
+                                           <div class="card__middle-2">
+                                                <div class="layout-2">
+                                                    <div class="layout__item-1">
+                                                <div class="layout-2__icon"> <img src="/img/wind.png"></div>
+                                                <div class="layout-2__desc"><h1>Wind</h1></div>
+                                                <div class="layout-2__index"><h1>s 1m/s</h1></div>
+                                                    </div>
+                                                    <div class="layout__item-2">
+                                                <div class="layout-2__icon">
+                                                    <img src="/img/humidity.png">
+                                                </div>
+                                                <div class="layout-2__desc">
+                                                    <h1>Humidity</h1>
+                                                </div>
+                                                <div class="layout-2__index">
+                                                    <h1>20%</h1>
+                                                </div>     
+                                                    </div>
+                                                    <div class="layout__item-3">
+                                                <div class="layout-2__icon"><img src="/img/visibility.png"></div>
+                                                <div class="layout-2__desc"><h1>Visibility</h1></div>
+                                                <div class="layout-2__index"><h1>5.5km</h1></div>   
+                                                    </div>
+                                                    <div class="layout__item-4">
+                                                <div class="layout-2__icon"><img src="/img/air.png"></div>
+                                                <div class="layout-2__desc"><h1>Air Qualiity</h1></div>
+                                                <div class="layout-2__index"><h1>Moderate</h1></div>      
+                                                    </div> 
+                                                 </div> 
+                                            </div>
+                                        </div>
+                                    </div>    
+                                </article>
+
+                                <article class="weekly__card__article swiper-slide">
+                                    <div class="card__top">
+                                        <div class="article__header">
+                                            <div class="article__header__item"><img src="img/menu.png"></div>
+                                            <div class="article__header__item" ><h1 style="font-size:22px; color:#fff;">THURSDAY</h1></div>
+                                            <div class="article__header__item"></div>
+                                        </div>
+                                        <div class="article__icon">
+                                            <div class="article__icon__img">
+                                                <img src="/img/13.png" alt="snow">
+                                            </div>
+                                        </div>
+                                        <div class="article__icon__desc">
+                                            <h3 style="font-size: 55px;">5<sup style="vertical-align:text-top;font-size:25px; ">o</sup></h3>
+                                        </div>
+                                        
+                                    </div>
+
+                                    <div class="card__middle" onmouseover="showOverlay(this)" onmouseout="hideOverlay(this)">
+                                        <div class="layout">
+                                            <div class="grid wide">
+                                                <div class="row">
+                                                    <div class="col l-2 m-4 c-2" style="padding:6px;">
+                                                        <div class="card__middle__content">
+                                                            <div class="card__middle__desc">
+                                                                <h4>4AM</h4>
+                                                            </div>
+                                                            <div class="card__middle__logo">
+                                                                <img src="/img/3.1.png">
+                                                            </div>
+                                                            <div class="card__middle__desc">
+                                                                <h4 style="font-size: 16px;">18<sup style="vertical-align:text-top;font-size:10px; ">o</sup></h4>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div class="col l-2 m-4 c-2" style="padding:6px;">
+                                                        <div class="card__middle__content">
+                                                            <div class="card__middle__desc">
+                                                                <h4>8AM</h4>
+                                                            </div>
+                                                            <div class="card__middle__logo">
+                                                                <img src="/img/6.png">
+                                                            </div>
+                                                            <div class="card__middle__desc">
+                                                                <h4 style="font-size: 16px;">22<sup style="vertical-align:text-top;font-size:10px; ">o</sup></h4>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+
+                                                    <div class="col l-2 m-4 c-2" style="padding:6px;">
+                                                        <div class="card__middle__content">
+                                                            <div class="card__middle__desc">
+                                                                <h4>12PM</h4>
+                                                            </div>
+                                                            <div class="card__middle__logo">
+                                                                <img src="/img/7.png">
+                                                            </div>
+                                                            <div class="card__middle__desc">
+                                                                <h4 style="font-size: 16px;">32<sup style="vertical-align:text-top;font-size:10px; ">o</sup></h4>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+
+                                                    <div class="col l-2 m-4 c-2" style="padding:6px;">
+                                                        <div class="card__middle__content">
+                                                            <div class="card__middle__desc">
+                                                                <h4>16PM</h4>
+                                                            </div>
+                                                            <div class="card__middle__logo">
+                                                                <img src="/img/8.png">
+                                                            </div>
+                                                            <div class="card__middle__desc">
+                                                                <h4 style="font-size: 16px;">24<sup style="vertical-align:text-top;font-size:10px; ">o</sup></h4>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div class="col l-2 m-4 c-2" style="padding:6px;">
+                                                        <div class="card__middle__content">
+                                                            <div class="card__middle__desc">
+                                                                <h4>20PM</h4>
+                                                            </div>
+                                                            <div class="card__middle__logo">
+                                                                <img src="/img/2.1.png">
+                                                            </div>
+                                                            <div class="card__middle__desc">
+                                                                <h4 style="font-size: 16px;">21<sup style="vertical-align:text-top;font-size:10px; ">o</sup></h4>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div class="col l-2 m-4 c-2" style="padding:6px;">
+                                                        <div class="card__middle__content">
+                                                            <div class="card__middle__desc">
+                                                                <h4>24PM</h4>
+                                                            </div>
+                                                            <div class="card__middle__logo">
+                                                                <img src="/img/9.png">
+                                                            </div>
+                                                            <div class="card__middle__desc">
+                                                                <h4 style="font-size: 16px;">17<sup style="vertical-align:text-top;font-size:10px; ">o</sup></h4>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="overlay_details" id="overlay_details">
+                                           <div class="card__middle-2">
+                                                <div class="layout-2">
+                                                    <div class="layout__item-1">
+                                                <div class="layout-2__icon"> <img src="/img/wind.png"></div>
+                                                <div class="layout-2__desc"><h1>Wind</h1></div>
+                                                <div class="layout-2__index"><h1>s 1m/s</h1></div>
+                                                    </div>
+                                                    <div class="layout__item-2">
+                                                <div class="layout-2__icon">
+                                                    <img src="/img/humidity.png">
+                                                </div>
+                                                <div class="layout-2__desc">
+                                                    <h1>Humidity</h1>
+                                                </div>
+                                                <div class="layout-2__index">
+                                                    <h1>20%</h1>
+                                                </div>     
+                                                    </div>
+                                                    <div class="layout__item-3">
+                                                <div class="layout-2__icon"><img src="/img/visibility.png"></div>
+                                                <div class="layout-2__desc"><h1>Visibility</h1></div>
+                                                <div class="layout-2__index"><h1>5.5km</h1></div>   
+                                                    </div>
+                                                    <div class="layout__item-4">
+                                                <div class="layout-2__icon"><img src="/img/air.png"></div>
+                                                <div class="layout-2__desc"><h1>Air Qualiity</h1></div>
+                                                <div class="layout-2__index"><h1>Moderate</h1></div>      
+                                                    </div> 
+                                                 </div> 
+                                            </div>
+                                        </div>
+                                    </div>    
+                                </article>
+
+                                <article class="weekly__card__article swiper-slide">
+                                    <div class="card__top">
+                                        <div class="article__header">
+                                            <div class="article__header__item"><img src="img/menu.png"></div>
+                                            <div class="article__header__item" ><h1 style="font-size:22px; color:#fff;">FRIDAY</h1></div>
+                                            <div class="article__header__item"></div>
+                                        </div>
+                                        <div class="article__icon">
+                                            <div class="article__icon__img">
+                                                <img src="/img/6.png" alt="partly sunny">
+                                            </div>
+                                        </div>
+                                        <div class="article__icon__desc">
+                                            <h3 style="font-size: 55px;">18<sup style="vertical-align:text-top;font-size:25px; ">o</sup></h3>
+                                        </div>
+                                        
+                                    </div>
+
+                                    <div class="card__middle" onmouseover="showOverlay(this)" onmouseout="hideOverlay(this)">
+                                        <div class="layout">
+                                            <div class="grid wide">
+                                                <div class="row">
+                                                    <div class="col l-2 m-4 c-2" style="padding:6px;">
+                                                        <div class="card__middle__content">
+                                                            <div class="card__middle__desc">
+                                                                <h4>4AM</h4>
+                                                            </div>
+                                                            <div class="card__middle__logo">
+                                                                <img src="/img/3.1.png">
+                                                            </div>
+                                                            <div class="card__middle__desc">
+                                                                <h4 style="font-size: 16px;">18<sup style="vertical-align:text-top;font-size:10px; ">o</sup></h4>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div class="col l-2 m-4 c-2" style="padding:6px;">
+                                                        <div class="card__middle__content">
+                                                            <div class="card__middle__desc">
+                                                                <h4>8AM</h4>
+                                                            </div>
+                                                            <div class="card__middle__logo">
+                                                                <img src="/img/6.png">
+                                                            </div>
+                                                            <div class="card__middle__desc">
+                                                                <h4 style="font-size: 16px;">22<sup style="vertical-align:text-top;font-size:10px; ">o</sup></h4>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+
+                                                    <div class="col l-2 m-4 c-2" style="padding:6px;">
+                                                        <div class="card__middle__content">
+                                                            <div class="card__middle__desc">
+                                                                <h4>12PM</h4>
+                                                            </div>
+                                                            <div class="card__middle__logo">
+                                                                <img src="/img/7.png">
+                                                            </div>
+                                                            <div class="card__middle__desc">
+                                                                <h4 style="font-size: 16px;">32<sup style="vertical-align:text-top;font-size:10px; ">o</sup></h4>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+
+                                                    <div class="col l-2 m-4 c-2" style="padding:6px;">
+                                                        <div class="card__middle__content">
+                                                            <div class="card__middle__desc">
+                                                                <h4>16PM</h4>
+                                                            </div>
+                                                            <div class="card__middle__logo">
+                                                                <img src="/img/8.png">
+                                                            </div>
+                                                            <div class="card__middle__desc">
+                                                                <h4 style="font-size: 16px;">24<sup style="vertical-align:text-top;font-size:10px; ">o</sup></h4>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div class="col l-2 m-4 c-2" style="padding:6px;">
+                                                        <div class="card__middle__content">
+                                                            <div class="card__middle__desc">
+                                                                <h4>20PM</h4>
+                                                            </div>
+                                                            <div class="card__middle__logo">
+                                                                <img src="/img/2.1.png">
+                                                            </div>
+                                                            <div class="card__middle__desc">
+                                                                <h4 style="font-size: 16px;">21<sup style="vertical-align:text-top;font-size:10px; ">o</sup></h4>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div class="col l-2 m-4 c-2" style="padding:6px;">
+                                                        <div class="card__middle__content">
+                                                            <div class="card__middle__desc">
+                                                                <h4>24PM</h4>
+                                                            </div>
+                                                            <div class="card__middle__logo">
+                                                                <img src="/img/9.png">
+                                                            </div>
+                                                            <div class="card__middle__desc">
+                                                                <h4 style="font-size: 16px;">17<sup style="vertical-align:text-top;font-size:10px; ">o</sup></h4>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="overlay_details" id="overlay_details">
+                                           <div class="card__middle-2">
+                                                <div class="layout-2">
+                                                    <div class="layout__item-1">
+                                                <div class="layout-2__icon"> <img src="/img/wind.png"></div>
+                                                <div class="layout-2__desc"><h1>Wind</h1></div>
+                                                <div class="layout-2__index"><h1>s 1m/s</h1></div>
+                                                    </div>
+                                                    <div class="layout__item-2">
+                                                <div class="layout-2__icon">
+                                                    <img src="/img/humidity.png">
+                                                </div>
+                                                <div class="layout-2__desc">
+                                                    <h1>Humidity</h1>
+                                                </div>
+                                                <div class="layout-2__index">
+                                                    <h1>20%</h1>
+                                                </div>     
+                                                    </div>
+                                                    <div class="layout__item-3">
+                                                <div class="layout-2__icon"><img src="/img/visibility.png"></div>
+                                                <div class="layout-2__desc"><h1>Visibility</h1></div>
+                                                <div class="layout-2__index"><h1>5.5km</h1></div>   
+                                                    </div>
+                                                    <div class="layout__item-4">
+                                                <div class="layout-2__icon"><img src="/img/air.png"></div>
+                                                <div class="layout-2__desc"><h1>Air Qualiity</h1></div>
+                                                <div class="layout-2__index"><h1>Moderate</h1></div>      
+                                                    </div> 
+                                                 </div> 
+                                            </div>
+                                        </div>
+                                    </div>    
+                                </article>
+                                <article class="weekly__card__article swiper-slide">
+                                    <div class="card__top">
+                                        <div class="article__header">
+                                            <div class="article__header__item"><img src="img/menu.png"></div>
+                                            <div class="article__header__item" ><h1 style="font-size:22px; color:#fff;">saturday</h1></div>
+                                            <div class="article__header__item"></div>
+                                        </div>
+                                        <div class="article__icon">
+                                            <div class="article__icon__img">
+                                                <img src="/img/1.png" alt="sunny">
+                                            </div>
+                                        </div>
+                                        <div class="article__icon__desc">
+                                            <h3 style="font-size: 55px;">22<sup style="vertical-align:text-top;font-size:25px; ">o</sup></h3>
+                                        </div>
+                                        
+                                    </div>
+
+                                    <div class="card__middle" onmouseover="showOverlay(this)" onmouseout="hideOverlay(this)">
+                                        <div class="layout">
+                                            <div class="grid wide">
+                                                <div class="row">
+                                                    <div class="col l-2 m-4 c-2" style="padding:6px;">
+                                                        <div class="card__middle__content">
+                                                            <div class="card__middle__desc">
+                                                                <h4>4AM</h4>
+                                                            </div>
+                                                            <div class="card__middle__logo">
+                                                                <img src="/img/3.1.png">
+                                                            </div>
+                                                            <div class="card__middle__desc">
+                                                                <h4 style="font-size: 16px;">18<sup style="vertical-align:text-top;font-size:10px; ">o</sup></h4>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div class="col l-2 m-4 c-2" style="padding:6px;">
+                                                        <div class="card__middle__content">
+                                                            <div class="card__middle__desc">
+                                                                <h4>8AM</h4>
+                                                            </div>
+                                                            <div class="card__middle__logo">
+                                                                <img src="/img/6.png">
+                                                            </div>
+                                                            <div class="card__middle__desc">
+                                                                <h4 style="font-size: 16px;">22<sup style="vertical-align:text-top;font-size:10px; ">o</sup></h4>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+
+                                                    <div class="col l-2 m-4 c-2" style="padding:6px;">
+                                                        <div class="card__middle__content">
+                                                            <div class="card__middle__desc">
+                                                                <h4>12PM</h4>
+                                                            </div>
+                                                            <div class="card__middle__logo">
+                                                                <img src="/img/7.png">
+                                                            </div>
+                                                            <div class="card__middle__desc">
+                                                                <h4 style="font-size: 16px;">32<sup style="vertical-align:text-top;font-size:10px; ">o</sup></h4>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+
+                                                    <div class="col l-2 m-4 c-2" style="padding:6px;">
+                                                        <div class="card__middle__content">
+                                                            <div class="card__middle__desc">
+                                                                <h4>16PM</h4>
+                                                            </div>
+                                                            <div class="card__middle__logo">
+                                                                <img src="/img/8.png">
+                                                            </div>
+                                                            <div class="card__middle__desc">
+                                                                <h4 style="font-size: 16px;">24<sup style="vertical-align:text-top;font-size:10px; ">o</sup></h4>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div class="col l-2 m-4 c-2" style="padding:6px;">
+                                                        <div class="card__middle__content">
+                                                            <div class="card__middle__desc">
+                                                                <h4>20PM</h4>
+                                                            </div>
+                                                            <div class="card__middle__logo">
+                                                                <img src="/img/2.1.png">
+                                                            </div>
+                                                            <div class="card__middle__desc">
+                                                                <h4 style="font-size: 16px;">21<sup style="vertical-align:text-top;font-size:10px; ">o</sup></h4>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div class="col l-2 m-4 c-2" style="padding:6px;">
+                                                        <div class="card__middle__content">
+                                                            <div class="card__middle__desc">
+                                                                <h4>24PM</h4>
+                                                            </div>
+                                                            <div class="card__middle__logo">
+                                                                <img src="/img/9.png">
+                                                            </div>
+                                                            <div class="card__middle__desc">
+                                                                <h4 style="font-size: 16px;">17<sup style="vertical-align:text-top;font-size:10px; ">o</sup></h4>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="overlay_details" id="overlay_details">
+                                           <div class="card__middle-2">
+                                                <div class="layout-2">
+                                                    <div class="layout__item-1">
+                                                <div class="layout-2__icon"> <img src="/img/wind.png"></div>
+                                                <div class="layout-2__desc"><h1>Wind</h1></div>
+                                                <div class="layout-2__index"><h1>s 1m/s</h1></div>
+                                                    </div>
+                                                    <div class="layout__item-2">
+                                                <div class="layout-2__icon">
+                                                    <img src="/img/humidity.png">
+                                                </div>
+                                                <div class="layout-2__desc">
+                                                    <h1>Humidity</h1>
+                                                </div>
+                                                <div class="layout-2__index">
+                                                    <h1>20%</h1>
+                                                </div>     
+                                                    </div>
+                                                    <div class="layout__item-3">
+                                                <div class="layout-2__icon"><img src="/img/visibility.png"></div>
+                                                <div class="layout-2__desc"><h1>Visibility</h1></div>
+                                                <div class="layout-2__index"><h1>5.5km</h1></div>   
+                                                    </div>
+                                                    <div class="layout__item-4">
+                                                <div class="layout-2__icon"><img src="/img/air.png"></div>
+                                                <div class="layout-2__desc"><h1>Air Qualiity</h1></div>
+                                                <div class="layout-2__index"><h1>Moderate</h1></div>      
+                                                    </div> 
+                                                 </div> 
+                                            </div>
+                                        </div>
+                                    </div>    
+                                </article>
+                                <article class="weekly__card__article swiper-slide">
+                                    <div class="card__top">
+                                        <div class="article__header">
+                                            <div class="article__header__item"><img src="img/menu.png"></div>
+                                            <div class="article__header__item" ><h1 style="font-size:22px; color:#fff;">SUNDAY</h1></div>
+                                            <div class="article__header__item"></div>
+                                        </div>
+                                        <div class="article__icon">
+                                            <div class="article__icon__img">
+                                                <img src="/img/7.png" alt="sunny">
+                                            </div>
+                                        </div>
+                                        <div class="article__icon__desc">
+                                            <h3 style="font-size: 55px;">24<sup style="vertical-align:text-top;font-size:25px; ">o</sup></h3>
+                                        </div>
+                                        
+                                    </div>
+
+                                    <div class="card__middle" onmouseover="showOverlay(this)" onmouseout="hideOverlay(this)">
+                                        <div class="layout">
+                                            <div class="grid wide">
+                                                <div class="row">
+                                                    <div class="col l-2 m-4 c-2" style="padding:6px;">
+                                                        <div class="card__middle__content">
+                                                            <div class="card__middle__desc">
+                                                                <h4>4AM</h4>
+                                                            </div>
+                                                            <div class="card__middle__logo">
+                                                                <img src="/img/3.1.png">
+                                                            </div>
+                                                            <div class="card__middle__desc">
+                                                                <h4 style="font-size: 16px;">18<sup style="vertical-align:text-top;font-size:10px; ">o</sup></h4>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div class="col l-2 m-4 c-2" style="padding:6px;">
+                                                        <div class="card__middle__content">
+                                                            <div class="card__middle__desc">
+                                                                <h4>8AM</h4>
+                                                            </div>
+                                                            <div class="card__middle__logo">
+                                                                <img src="/img/6.png">
+                                                            </div>
+                                                            <div class="card__middle__desc">
+                                                                <h4 style="font-size: 16px;">22<sup style="vertical-align:text-top;font-size:10px; ">o</sup></h4>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+
+                                                    <div class="col l-2 m-4 c-2" style="padding:6px;">
+                                                        <div class="card__middle__content">
+                                                            <div class="card__middle__desc">
+                                                                <h4>12PM</h4>
+                                                            </div>
+                                                            <div class="card__middle__logo">
+                                                                <img src="/img/7.png">
+                                                            </div>
+                                                            <div class="card__middle__desc">
+                                                                <h4 style="font-size: 16px;">32<sup style="vertical-align:text-top;font-size:10px; ">o</sup></h4>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+
+                                                    <div class="col l-2 m-4 c-2" style="padding:6px;">
+                                                        <div class="card__middle__content">
+                                                            <div class="card__middle__desc">
+                                                                <h4>16PM</h4>
+                                                            </div>
+                                                            <div class="card__middle__logo">
+                                                                <img src="/img/8.png">
+                                                            </div>
+                                                            <div class="card__middle__desc">
+                                                                <h4 style="font-size: 16px;">24<sup style="vertical-align:text-top;font-size:10px; ">o</sup></h4>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div class="col l-2 m-4 c-2" style="padding:6px;">
+                                                        <div class="card__middle__content">
+                                                            <div class="card__middle__desc">
+                                                                <h4>20PM</h4>
+                                                            </div>
+                                                            <div class="card__middle__logo">
+                                                                <img src="/img/2.1.png">
+                                                            </div>
+                                                            <div class="card__middle__desc">
+                                                                <h4 style="font-size: 16px;">21<sup style="vertical-align:text-top;font-size:10px; ">o</sup></h4>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div class="col l-2 m-4 c-2" style="padding:6px;">
+                                                        <div class="card__middle__content">
+                                                            <div class="card__middle__desc">
+                                                                <h4>24PM</h4>
+                                                            </div>
+                                                            <div class="card__middle__logo">
+                                                                <img src="/img/9.png">
+                                                            </div>
+                                                            <div class="card__middle__desc">
+                                                                <h4 style="font-size: 16px;">17<sup style="vertical-align:text-top;font-size:10px; ">o</sup></h4>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="overlay_details" id="overlay_details">
+                                           <div class="card__middle-2">
+                                                <div class="layout-2">
+                                                    <div class="layout__item-1">
+                                                <div class="layout-2__icon"> <img src="/img/wind.png"></div>
+                                                <div class="layout-2__desc"><h1>Wind</h1></div>
+                                                <div class="layout-2__index"><h1>s 1m/s</h1></div>
+                                                    </div>
+                                                    <div class="layout__item-2">
+                                                <div class="layout-2__icon">
+                                                    <img src="/img/humidity.png">
+                                                </div>
+                                                <div class="layout-2__desc">
+                                                    <h1>Humidity</h1>
+                                                </div>
+                                                <div class="layout-2__index">
+                                                    <h1>20%</h1>
+                                                </div>     
+                                                    </div>
+                                                    <div class="layout__item-3">
+                                                <div class="layout-2__icon"><img src="/img/visibility.png"></div>
+                                                <div class="layout-2__desc"><h1>Visibility</h1></div>
+                                                <div class="layout-2__index"><h1>5.5km</h1></div>   
+                                                    </div>
+                                                    <div class="layout__item-4">
+                                                <div class="layout-2__icon"><img src="/img/air.png"></div>
+                                                <div class="layout-2__desc"><h1>Air Qualiity</h1></div>
+                                                <div class="layout-2__index"><h1>Moderate</h1></div>      
+                                                    </div> 
+                                                 </div> 
+                                            </div>
+                                        </div>
+                                    </div>    
+                                </article>
+                            </div>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="world" id="world">
+        
+
+        <div class="world__content">
+            <div class="grid wide">
+            <div class="row">
+                <div class="col l-4 m-0 c-0">
+                    <div class="world__heading">
+                        <h1>Recent Search Weather</h1> 
+                        <p>The 'Recent Search Weather' section displays the latest weather information for the cities you have recently
+                        searched.</p>
+                    </div>
+                </div>
+                
+                <div class="col l-8 m-12 c-12">
+                    <div class="world__recent-place">
+                        <h1><i class="fa-solid fa-location-arrow"></i> Recent Place</h1>
+                    </div>
+                    <div class="world__container swiper">
+                        <div class="world__card">
+                            <div class="swiper-wrapper" id="recentPlace">
+                                <article class="world__article">
+                                    
+                                    <div class="world__article__content">
+                                        <h1 style="font-size: 30px">-10<sup style="vertical-align:text-top;font-size:15px; ">o</sup></h1>
+                                        <h1 style="margin-top:20px;">New York</h1>
+                                    </div>
+                                    <div class="world__article__img">
+                                        <div class="world__article-overlay"></div>
+                                        <img src="/img/newyork.jpg" id="cityImage">
+                                    </div>
+                                    <div class="world__article__background">
+
+                                    </div>
+                                </article>
+                                <article class="world__article">
+                                    <div class="world__article__content">
+                                        <h1 style="font-size: 30px">19<sup style="vertical-align:text-top;font-size:15px; ">o</sup></h1>
+                                        <h1 style="margin-top:20px;">Hanoi</h1>
+                                    </div>
+                                    <div class="world__article__img">
+                                        <div class="world__article-overlay"></div>
+                                        <img src="/img/hanoi.jpg">
+                                    </div>
+                                    <div class="world__article__background">
+
+                                    </div>
+                                </article>
+                                <article class="world__article">
+                                    <div class="world__article__content">
+                                        <h1 style="font-size: 30px">8<sup style="vertical-align:text-top;font-size:15px; ">o</sup></h1>
+                                        <h1 style="margin-top:20px;">Paris</h1>
+                                    </div>
+                                    <div class="world__article__img">
+                                        <div class="world__article-overlay"></div>
+                                        <img src="/img/paris.jpg">
+                                    </div>
+                                    <div class="world__article__background">
+
+                                    </div>
+                                </article>
+                                <article class="world__article">
+                                    <div class="world__article__content">
+                                        <h1 style="font-size: 30px">-15<sup style="vertical-align:text-top;font-size:15px; ">o</sup></h1>
+                                        <h1 style="margin-top:20px;">London</h1>
+                                    </div>
+                                    <div class="world__article__img">
+                                        <div class="world__article-overlay"></div>
+                                        <img src="/img/london.avif">
+                                    </div>
+                                    <div class="world__article__background">
+
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="videos" id="videos">
+        <div class="grid wide">
+            <h1 style="padding:40px 0 40px 0;font-size:35px">Weather Videos</h1>
+            <div class="row">
+                <div class="col l-4 m-12 c-12">
+                    <div class="videos__container">
+                    <div class="videos__img">
+                        <img src="/img/video-1.webp" >
+                    </div>
+                    <div class="videos__desc">
+                        <a href="#">One of the daily rituals I often find myself doing</a>
+                    </div>
+                    <div class="videos__link">
+                        <i class="fa-solid fa-play"></i>
+                        <a href="#">Watch Video</a>
+                    </div>
+                    
+                    </div>
+                </div>
+                <div class="col l-4 m-12 c-12">
+                    <div class="videos__container">
+                    <div class="videos__img">
+                        <img src="/img/video-2.webp">
+                    </div>
+                    <div class="videos__desc">
+                        <a href="#">One of the daily rituals I often find myself doing</a>
+                    </div>
+                    <div class="videos__link">
+                        <i class="fa-solid fa-play"></i>
+                        <a href="#">Watch Video</a>
+                    </div>
+                    
+                    </div>
+                </div>
+                <div class="col l-4 m-12 c-12">
+                    <div class="videos__container">
+                    <div class="videos__img">
+                        <img src="/img/video-3.webp" >
+                    </div>
+                    <div class="videos__desc">
+                        <a href="#">One of the daily rituals I often find myself doing</a>
+                    </div>
+                    <div class="videos__link">
+                        <i class="fa-solid fa-play"></i>
+                        <a href="#">Watch Video</a>
+                    </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="news" id="news">
+        <div class="grid wide">
+            <div class="row" style="justify-content:center;align-items:center;">
+                <div class="col l-8 m-12 c-12">
+                    <div class="news_wraper">
+                        <div class="news__header">
+                            <h1>Forecast News</h1>
+                        </div>
+                        
+                    
+                        <div class="news_container">
+                            <div class="news_content">
+                                <a href="https://www.nytimes.com/2024/01/14/us/cold-snow-blizzards-weather.html" class="img-link">
+                                    <div class="new__img">
+                                        <img src="/img/news-1.webp" alt="new">
+                                    </div>
+                                </a>
+                                <ul class="news__author">
+                                    <li style="margin-right:20px;text-decoration:none;">
+                                        <a>
+                                            <i class="fa-solid fa-user-large"></i>
+                                            Author
+                                        </a>
+                                    </li>
+                                    
+                                    <li><a>
+                                        <i class="fa-solid fa-calendar"></i>
+                                        16 Jan 2024
+                                    </a></li>
+                                </ul>
+                                <div class="title">
+                                    <a href="https://www.nytimes.com/2024/01/14/us/cold-snow-blizzards-weather.html" style="text-decoration:none;">
+                                    Dangerous Subzero Wind Chills Blanket Much of the U.S.
+                                </a>
+                                </div>
+                                
+                                <p class="news__desc">More than 100 million people were under a wind chill warning or advisory on Sunday as an “Arctic blast” blanketed the country. Two people were killed in Oregon after trees fell on their homes.</p>
+                            </div>
+
+                            <div class="news_content">
+                                <a href="" class="img-link">
+                                    <div class="new__img">
+                                        <img src="/img/news-2.webp" alt="new">
+                                    </div>
+                                </a>
+                                <ul class="news__author">
+                                    <li style="margin-right:20px;text-decoration:none;">
+                                        <a>
+                                            <i class="fa-solid fa-user-large"></i>
+                                            Author
+                                        </a>
+                                    </li>
+                                    
+                                    <li><a>
+                                        <i class="fa-solid fa-calendar"></i>
+                                        16 Jan 2024
+                                    </a></li>
+                                </ul>
+                                <div class="title">
+                                    <a href="https://www.nytimes.com/2024/01/13/us/winter-storm-snow-rain-forecast.html" style="text-decoration:none;">
+                                    Coast to Coast, a Brutal Mix of Snow, Rain and Bitter Cold
+                                </a>
+                                </div>
+                                
+                                <p class="news__desc">More than 40 million Americans were under winter weather advisories on Saturday, with blizzards in the Midwest, flooding in the Northeast and freezing temperatures across much of the country.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l-4 m-12 c-12">
+                    <div class="news_wraper-2">
+                        <div class="picture-header">
+                            <h1>Weather In Pictures</h1>
+                        </div>
+                        <div class="picture-container">
+                            <div class="picture__row-1">
+                                <div class="picture__content">
+                                    <img src="/img/picture-1.jpg" alt="">
+                                </div>
+                                <div class="picture__content">
+                                    <img src="/img/picture-2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="picture__row-2">
+                                <div class="picture__content">
+                                    <img src="/img/picture-3.jpg" alt="">
+                                </div>
+                                <div class="picture__content">
+                                    <img src="/img/picture-5.webp" alt="people">
+                                </div>
+                            </div>                           
+                        </div>
+
+                    </div>
+                </div>
+            
+            </div>    
+        </div>
+        <div class="news__more">
+            <div class="news__more__btn">
+                <a href="#">View More</a>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="contact">
+        <div class="contact_overlay">
+        </div>
+        <div class="contact__content">
+            <div class="contact__heading">
+                <h1>Subscribe For Weather Update </h1>
+            </div>
+            <div class="contact__submit">
+                <input type="email" class= "email" id="email" required placeholder="Your Email">
+                <button type="submit" class="btn-submit">
+                    <i class="fa-solid fa-location-arrow iconSubmit"></i>
+                </button>
+                
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section class="footer">
+        <div>
+            {{> footer}}
+        </div>
+    </section>
+    <script src="/js/apiweather.js"></script>
+     <script src="/js/swiper-bundle.min.js"></script>
+     <script src="/js/main.js"></script>
+     
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

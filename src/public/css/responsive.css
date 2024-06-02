@@ -1,0 +1,443 @@
+/* breakpoints */
+
+/* Small Mobile */
+@media  (max-width:400px) {
+    .m-8 {
+        padding:0 20px 0 20px;
+    }
+    /*responsive mobile header */
+    .navbar_search {
+        width:100%;
+      }
+    .hideOnMobile {
+        display:none;
+    }
+    
+    .search_input::before {
+    content: "Search...";
+    color:aliceblue;
+    }
+    /*responsive mobile home content */
+    .block__location {
+        padding:35px 5px 0 5px;
+    }
+    .block {
+        margin-top:90px;
+    }
+    .card__container {
+        margin:20px 45px 0 45px;
+    }
+    .main_content {
+        height:800px;
+    }
+    .block__location__time {
+        padding:10px;
+    }
+    .block__detail {
+        padding:0 10px;
+    }
+    .degree {
+        width: 100%;
+    }
+    .degree__text {
+        position: relative;
+        height: 100%;
+        margin:0;
+    }
+
+    .degree__text h1 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom:16px;
+    }
+    /*responsive mobile today-detail */
+    .today {
+        height:1700px;  
+    }
+    .tomorrow {
+        height:1700px;  
+    }
+    .highlight {
+        margin-bottom:20px;
+    }
+    .highlight2 {
+        margin-bottom:20px;
+    }
+
+    /* responsive mobile weekly*/ 
+    .layout {
+        padding:15px 5px;
+    }
+
+    /* responsive mobile recent search*/ 
+    .world__article__content {
+        margin-top:60px;
+    }
+    /* responsive mobile weather videos*/ 
+    .videos {
+        height:1670px;
+    }
+    .videos__container {
+        margin-bottom:50px;
+    }
+
+    /*responsive mobile forecast news */
+    .news {
+    height: 1250px;
+    }
+    .news_wraper {
+        height: 550px;
+        overflow:hidden;
+    }
+    .news_wraper-2 {
+        margin-top:20px;
+
+    }
+    .news__desc {
+        max-height: 650px;
+    }
+
+     /*responsive mobile footer */
+     .videos__desc a{
+        text-align: center;
+     }
+
+
+}
+
+/* medium mobile */
+@media (min-width: 400px) and (max-width:575px) {
+    .m-8 {
+        padding:0 50px 0 50px;
+    }
+    /*responsive mobile header */
+    .navbar_search {
+        width:100%;
+      }
+    .hideOnMobile {
+        display:none;
+    }
+    
+    /*responsive mobile home content */
+    .block__location {
+        padding:35px 5px 0 5px;
+    }
+    .block {
+        margin-top:90px;
+    }
+    .card__container {
+        margin:20px 45px 0 45px;
+    }
+    .main_content {
+        height:800px;
+    }
+    .block__location__time {
+        padding:10px;
+    }
+    .block__detail {
+        padding:0 65px;
+    }
+    .degree {
+        width: 100%;
+    }
+    .degree__text {
+        position: relative;
+        height: 100%;
+        margin:0;
+    }
+
+    .degree__text h1 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom:16px;
+    }
+    /*responsive mobile today-detail */
+    .today {
+        height:1700px;  
+    }
+    .tomorrow {
+        height:1700px;  
+    }
+    .highlight {
+        margin-bottom:20px;
+    }
+    .highlight2 {
+        margin-bottom:20px;
+    }
+
+    /* responsive mobile weekly*/ 
+    .layout {
+        padding:15px 5px;
+    }
+    .article__icon__img {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .article__icon__img img {
+        object-fit: cover;
+    }
+    /* responsive mobile recent search*/ 
+    .world__article__content {
+        margin-top:60px;
+    }
+    
+    
+    /* responsive mobile weather videos*/ 
+    .videos {
+        height:1670px;
+    }
+    .videos__container {
+        margin-bottom:50px;
+    }
+
+    /*responsive mobile forecast news */
+    .news {
+    height: 1250px;
+    }
+    .news_wraper {
+        height: 550px;
+        overflow:hidden;
+    }
+    .news_wraper-2 {
+        margin-top:20px;
+
+    }
+    .news__desc {
+        max-height: 650px;
+    }
+
+
+}
+/* Large Mobile */
+@media (min-width: 575px) and (max-width:740px) {
+    .m-8 {
+        padding:0 100px 0 100px;
+    }
+    /*responsive mobile header */
+    .navbar_search {
+        width:100%;
+      }
+    .hideOnMobile {
+        display:none;
+    }
+    
+    /* .search_input::placeholder {
+    color: transparent;
+    } */
+    .search_input::before {
+    content: "Search...";
+    color:aliceblue;
+    }
+    /*responsive mobile home content */
+    .block__location {
+        padding:35px 5px 0 5px;
+    }
+    .block {
+        margin-top:90px;
+    }
+    .card__container {
+        margin:20px 45px 0 45px;
+    }
+    .main_content {
+        height:800px;
+    }
+    .block__location__time {
+        padding:10px;
+    }
+    .block__detail {
+        padding:0 150px;
+    }
+    .degree {
+        width: 100%;
+    }
+    .degree__text {
+        position: relative;
+        height: 100%;
+        margin:0;
+    }
+
+    .degree__text h1 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom:16px;
+    }
+    /*responsive mobile today-detail */
+    .today {
+        height:1700px;  
+    }
+    .tomorrow {
+        height:1700px;  
+    }
+    .highlight {
+        margin-bottom:20px;
+    }
+    .highlight2 {
+        margin-bottom:20px;
+    }
+
+    /* responsive mobile weekly*/ 
+    .layout {
+        padding:15px 5px;
+    }
+
+
+    /* responsive mobile recent search*/ 
+    .world__article__content {
+        margin-top:60px;
+    }
+
+    
+    
+    /* responsive mobile weather videos*/ 
+    .videos {
+        height:1670px;
+    }
+    .videos__container {
+        margin-bottom:50px;
+    }
+
+    /*responsive mobile forecast news */
+    .news {
+    height: 1250px;
+    }
+    .news_wraper {
+        height: 550px;
+        overflow:hidden;
+    }
+    .news_wraper-2 {
+        margin-top:20px;
+
+    }
+    .news__desc {
+        max-height: 650px;
+    }
+
+
+}
+
+/* Tablet - PC low resolution */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .hideOnTablet {
+        display:none;
+    }
+    .block__location {
+        padding:55px 5px 0 5px;
+    }
+    .block {
+        margin-top:100px;
+    }
+    .card__container {
+        margin-top:50px;
+        margin-left:0;
+    }
+    .main_content {
+        height:800px;
+    }
+    .block__location__time {
+        padding:10px 110px 10px 110px;
+    }
+
+    /*responsive tablet today-detail */
+    .today {
+        height:1000px;
+    }
+    .highlight2.custom {
+        display: flex;
+        margin-top:16px;
+    }
+    .custom.highlight2_1 {
+        margin-bottom:0;
+    }
+    .highlight2.custom.highlight2_2 {
+        margin-bottom:0;
+    }
+    .tomorrow {
+        height: 1000px;
+    }
+    .date {
+        padding-left:20px;
+    }
+    .city-detail {
+        padding-right:5px;
+    }
+    
+    /*responsive tablet weekly */
+    .card__middle__content {
+        height: 100px;
+    }
+    .card__middle__desc {
+        height: 20px;
+    }
+    .article__icon {
+        padding:0 30px;
+    }
+    
+    /* responsive tablet weather videos*/ 
+    .videos {
+        height:1650px;
+    }
+    .videos__container {
+        margin-top:30px;
+    }
+
+    /*responsive tablet forecast news */
+    .news {
+        height: 1200px;
+    }
+}
+
+/* > PC low resolution */
+@media (min-width: 1024px) and (max-width: 1239px) {
+    .hideOnPClow {
+        display: none;
+    }
+    .hideOnPC {
+        display: none;
+    }
+    /* .block__location {
+        padding:55px 20px 0 20px;
+    } */
+    .degree {
+        width:100%;
+        padding: 0 50px;
+    }
+    .card__text {
+        margin:0 20px 0 20px;
+    }
+    .article__icon {
+        padding:0 40px;
+    }
+    .layout {
+        padding:15px 10px;
+    }
+    .date {
+        padding-left:0;
+    }
+    .city-detail {
+        padding-right:10px;
+    }
+
+
+    /*responsive tablet weekly */
+    .article__icon {
+        padding:0 120px;
+        }
+    
+}
+
+/* PC medium resolution > */
+@media (min-width: 1113px) { 
+    .hideOnPC {
+        display: none;
+    }
+
+}

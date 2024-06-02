@@ -1,0 +1,2 @@
+The Pro Plus plan trial for Api ends on 22/5/2024
+So for the website to work normally, please change the line 385 "numCards" of apiweather.js from 7 to 3. =))
